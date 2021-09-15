@@ -13,7 +13,7 @@ public class Human extends Creature {
 
     public void setSprite() {
         try {
-            super.sprite = new String(Files.readAllBytes(Paths.get("D:\\HVSP\\src\\main\\resources\\Sprites\\HumanNaked")), StandardCharsets.UTF_8);
+            super.sprite = new String(Files.readAllBytes(Paths.get("D:\\HVSP\\src\\main\\resources\\Sprites\\Human")), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
         }
