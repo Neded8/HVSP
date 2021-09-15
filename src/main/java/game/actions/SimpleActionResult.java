@@ -1,4 +1,8 @@
-public class SimpleActionResult implements IActionResult{
+package game.actions;
+
+import game.actions.IActionResult;
+
+public class SimpleActionResult implements IActionResult {
 
     private String actionMessage;
 

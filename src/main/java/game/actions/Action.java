@@ -1,3 +1,5 @@
+package game.actions;
+
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public abstract class Action {
