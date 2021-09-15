@@ -1,9 +1,15 @@
+package game;
+
+import game.сreatures.Creature;
+import game.сreatures.Human;
+import game.сreatures.IStats;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Model {
     private Human Hero;
-    private Pig Enemy;
+    private Creature Enemy;
     private List<Integer> levelSheetArrayList = new ArrayList<Integer>();
 
     public List<Integer> getLevelSheet() {
@@ -15,18 +21,19 @@ public class Model {
     }
 
     public void addDamage(IStats actor) {
-        actor.calcDamage();
+        actor.getDamage();
     }
 
     public void changeLevelExperience(int level, int experienceLevel) {
         this.levelSheetArrayList.add(level - 1, experienceLevel);
     }
 
+
     public void setHero(Human hero) {
         Hero = hero;
     }
 
-    public void setEnemy(Pig enemy) {
+    public void setEnemy(Creature enemy) {
         this.Enemy = enemy;
     }
 
@@ -46,9 +53,9 @@ public class Model {
         return actor.getType();
     }
 
-    public void setActorLevel(IStats actor, int level) {
-        actor.setLevel(level);
-    }
+//    public void setActorLevel(game.сreatures.IStats actor, int level) {
+//        actor.setLevel(level);
+//    }
 
     public int getActorLevel(IStats actor) {
         return actor.getLevel();
@@ -72,9 +79,9 @@ public class Model {
         return actor.getHealth();
     }
 
-    public void setDamage(IStats actor, float damage) {
-        actor.setDamage(damage);
-    }
+//    public void setDamage(game.сreatures.IStats actor, float damage) {
+//        actor.setDamage(damage);
+//    }
 
     ;
 
@@ -82,9 +89,9 @@ public class Model {
         return actor.getHealth();
     }
 
-    public void setMaxHP(IStats actor, float maxHP) {
-        actor.setMaxHP(maxHP);
-    }
+//    public void setMaxHP(game.сreatures.IStats actor, float maxHP) {
+//        actor.setMaxHP(maxHP);
+//    }
 
     ;
 

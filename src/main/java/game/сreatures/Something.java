@@ -1,4 +1,6 @@
-public class Something extends  Model{
+package game.сreatures;
+
+public class Something {
     private String type;
     private String name;
 
